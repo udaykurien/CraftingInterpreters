@@ -1,0 +1,10 @@
+# Compiled Java classes
+out/
+*.class
+
+# Zed
+.zed/
+
+# OS
+.DS_Store
+Thumbs.db
