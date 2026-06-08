@@ -88,7 +88,7 @@ class Scanner {
                 break;
             // Handle single or double character tokens
             case '!':
-                addToken(match('=') ? BANG_EQUAL " BANG");
+                addToken(match('=') ? BANG_EQUAL : BANG);
                 break;
             case '=':
                 addToken(match('=') ? EQUAL_EQUAL : EQUAL);

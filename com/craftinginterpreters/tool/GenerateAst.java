@@ -1,5 +1,20 @@
 package com.craftinginterpreters.tool;
 
+/*
+Productions:
+expression     → literal
+               | unary
+               | binary
+               | grouping ;
+
+literal        → NUMBER | STRING | "true" | "false" | "nil" ; -> Are expressions by themselves
+grouping       → "(" expression ")" ;
+unary          → ( "-" | "!" ) expression ;
+binary         → expression operator expression ;
+operator       → "==" | "!=" | "<" | "<=" | ">" | ">="
+               | "+"  | "-"  | "*" | "/" ; -> Are not expressions by themselves ie they don't appear independently in the tree
+*/
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
